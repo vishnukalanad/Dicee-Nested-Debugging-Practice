@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Random randomNumberGenerator = new Random();
-                int number = randomNumberGenerator.nextInt(7);
+                int number = randomNumberGenerator.nextInt(6);
                 Log.d("Dicee", "The number for the left dice is " + number);
 
                 int imageResourceId = diceArray[number];
                 leftDice.setImageResource(imageResourceId);
 
-                number = randomNumberGenerator.nextInt(100);
+                number = randomNumberGenerator.nextInt(6);
                 Log.d("Dicee", "The number for the right dice is " + number);
                 imageResourceId = diceArray[number];
                 rightDice.setImageResource(imageResourceId);
